@@ -1,0 +1,18 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        int i;
+        Scanner s=new Scanner(System.in);
+        int a=s.nextInt();
+        int sum=0;
+       while(a>0){
+           int d=a%10;
+           System.out.print(d);
+           a=a/10;
+       }
+       
+    }
+}
