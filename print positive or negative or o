@@ -1,0 +1,46 @@
+import java.io.*;
+
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+
+        Scanner s=new Scanner(System.in);
+
+  
+
+        int n=s.nextInt();
+
+        int m=s.nextInt();
+
+        int i,j;
+        int count=0;
+
+        int a[][]  =new int[50][50];
+
+        for(i=0;i<n;i++) {
+
+        for(j=0;j<m;j++) { 
+
+        a[i][j]=s.nextInt();
+    if(a[i][j]>0) {
+       System.out.println("positive:"+a[i][j]); 
+      }
+      else if(a[i][j]<0) {
+       System.out.println("negative"+a[i][j]); 
+      }
+       else if(a[i][j]==0) {
+       System.out.println("zero:"+a[i][j]); 
+      }
+      else{
+        System.out.println("invalid");
+      }
+    
+        }
+        
+      }      
+      
+    }
+
+}
